@@ -11,15 +11,15 @@
 创建`hrpc`框架项目，完成底层`rpc`相关逻辑
 创建用户项目`rpc-demo`(承载业务代码，使用`hrpc`完成`rpc`调)
 
-![image-20241103084201628](https://hututu345.oss-cn-beijing.aliyuncs.com/typora/image-20241103084201628.png)
+5
 
 * 整体架构
 
 ![image-20241103084220866](https://hututu345.oss-cn-beijing.aliyuncs.com/typora/image-20241103084220866.png)
 
-* 服务端的实现
+*  服务端的实现
 
-![image-20241103084625713](./assets/image-20241103084625713.png)
+![image-20241103084625713](https://hututu345.oss-cn-beijing.aliyuncs.com/typora/image-20241103084625713.png)
 
 * 客户端的实现
 
@@ -27,7 +27,7 @@
 
 * `zookeeper`中数据的结构
 
-![image-20241103092709178](./assets/image-20241103092709178.png)
+![image-20241103092709178](https://hututu345.oss-cn-beijing.aliyuncs.com/typora/image-20241103092709178.png)
 
 ## 服务端的实现
 
@@ -327,7 +327,7 @@ public class ZkRegistry implements RpcRegister {
 }
 ```
 
-![image-20241103100547970](./assets/image-20241103100547970.png)
+![image-20241103100547970](https://hututu345.oss-cn-beijing.aliyuncs.com/typora/image-20241103100547970.png)
 
 在我们的项目启动就会
 
@@ -337,11 +337,11 @@ public class ZkRegistry implements RpcRegister {
 
 日志输出
 
-![image-20241103102719293](./assets/image-20241103102719293.png)
+![image-20241103102719293](https://hututu345.oss-cn-beijing.aliyuncs.com/typora/image-20241103102719293.png)
 
 查看`zookeeper`
 
-![image-20241103102738252](./assets/image-20241103102738252.png)
+![image-20241103102738252](https://hututu345.oss-cn-beijing.aliyuncs.com/typora/image-20241103102738252.png)
 
 **目前完成了服务的注册**
 
@@ -616,7 +616,7 @@ public class DefaultServiceProviderCache implements ServiceProviderCache {
 
 编写启动类
 
-![image-20241103184407581](./assets/image-20241103184407581.png)
+![image-20241103184407581](https://hututu345.oss-cn-beijing.aliyuncs.com/typora/image-20241103184407581.png)
 
 **zk的工具包**
 
@@ -733,9 +733,9 @@ public class ZKServiceDiscovery implements RpcServiceDiscovery {
 
 **测试**
 
-![image-20241103184638722](./assets/image-20241103184638722.png)
+![image-20241103184638722](https://hututu345.oss-cn-beijing.aliyuncs.com/typora/image-20241103184638722.png)
 
-![image-20241103184653268](./assets/image-20241103184653268.png)
+![image-20241103184653268](https://hututu345.oss-cn-beijing.aliyuncs.com/typora/image-20241103184653268.png)
 
 ### 生成代理
 
@@ -1219,7 +1219,7 @@ public class WeightRandomLoadBalanceStrategy implements LoadBalanceStrategy {
 
 用户可以在配置文件指定负载均衡的算法
 
-![image-20241103230508575](./assets/image-20241103230508575.png)
+![image-20241103230508575](https://hututu345.oss-cn-beijing.aliyuncs.com/typora/image-20241103230508575.png)
 
 然后框架在选择就会使用对应的算法
 
@@ -1245,7 +1245,7 @@ public @interface HrpcLoadBalance {
 
 标记在负载均衡的算法的实现上
 
-![image-20241103230636972](./assets/image-20241103230636972.png)
+![image-20241103230636972](https://hututu345.oss-cn-beijing.aliyuncs.com/typora/image-20241103230636972.png)
 
 ```java
 @Component
@@ -1298,8 +1298,6 @@ public class DefaultStrategyProvider implements StartegyProvider, ApplicationCon
 
     }
 ```
-
-
 
 
 
