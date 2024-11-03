@@ -1,0 +1,19 @@
+server:
+  port: 8081
+logging:
+  config: classpath:logback-spring.xml
+spring:
+  application:
+    name: rpc-client
+
+rpc:
+  client:
+      zk:
+        root: /rpc
+        addr: localhost:2181
+        switch: true
+        timeout: 10000
+      api:
+        package: com.itcast.rpc.api
+  cluster:
+        strategy: random
