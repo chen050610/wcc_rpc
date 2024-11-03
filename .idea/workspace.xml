@@ -17,6 +17,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -47,6 +50,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.ShopApplicaiton.executor": "Run",
     "Spring Boot.ShopServiceApplication.executor": "Run",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/codeSpace/wcc_rpc",
     "node.js.detected.package.eslint": "true",
@@ -140,7 +144,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1730594293064</updated>
-      <workItem from="1730594293271" duration="24734000" />
+      <workItem from="1730594293271" duration="25557000" />
     </task>
     <servers />
   </component>
